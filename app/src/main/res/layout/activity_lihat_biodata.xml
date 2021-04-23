@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".LihatBiodata">
+
+    <LinearLayout
+        android:id="@+id/berisiNomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Nomor" />
+        <TextView
+            android:id="@+id/isiNomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text="Nomor"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/berisiNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_below="@+id/berisiNomor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Nama" />
+        <TextView
+            android:id="@+id/isiNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text="Nama" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/berisiTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_below="@+id/berisiNama">
+    
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Tanggal lahir"/>
+
+        <TextView
+            android:id="@+id/isiTgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text="Tanggal lahir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/berisiJk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_below="@+id/berisiTgl">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:text="Jenis kelamin" />
+
+    <TextView
+        android:id="@+id/isiJk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="Jenis kelamin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/berisiAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_below="@+id/berisiJk">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="Alamat" />
+
+        <TextView
+        android:id="@+id/isiAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="Alamat" />
+    </LinearLayout>
+
+</RelativeLayout>
